@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <!--Se por acaso a imagem não funcionar a grande, usa essa dica aqui depois de imagem frexivel style="width: 100%; max-width: 1050px--> 
+    <picture> 
+          <source media="(max-width: 670px)" srcset="imagem/foto-p.png" type="image/png">
+          <source media="(max-width: 1090px)" srcset="imagem/foto-m.png" type="image/png">
+          <img src="imagem/foto-g.png" alt="imagem flexivel"style="width: 100%; max-width: 1590px">
+        </picture> 
+    </picture>
+
+    <h2>Vamos colocar aúdios no nosso site</h2>
+    <p>podemos colocar nossos aúdios em formatos mp3,wav,ogg. Obs: o formato wav não é muito recomendado, porque ele deixa muito grande, e em resultado o site ficará muito pesado.</p>
+
+
+    <!--tem os valores, metadata, o none, e o auto----Também o atributo, controls, autoplay, loop-->
+<!--Comentário adicional, você pode usar esse padrão aqui também-->
+  
+<!--<audio preload="metadata" controls autoplay loop>
+     <source src="a musica que você quer" type="audio/mpeg"> 
+    </audio>-->
+
+  <audio controls autoplay loop>
+    <source src="audios/Instant Crush - Corbyn Kites.mp3" type="audio/mpeg">
+  </audio>
+
+</body>
+</html>

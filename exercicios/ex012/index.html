@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>videos</title>
+</head>
+<body>
+  <h1>Inserindo videos hospedados localmente</h1>
+  <p>Este video está hospedado no meu próprio servidor</p>
+  <!--Bom, poster= Capa que aparecerá no video. width= largura do video. Height= altura do video.-->
+
+  <!--Dessa maneira, hospedado localmente, vai consumir muita banda larga, o que ocasionalmente pesará no bolso do cliente! Fique ciente disso-->
+  <video width="650" height="400" poster="imagem/capa.png" controls autoplay>
+    <source src="midia/video-webm.webm" type="video/webm">
+    <source src="midia/video-m4v.mkv" type="video/mp4">
+    <source src="midia/video-mp4.mp4" type="video/mp4">
+    <source src="midia/video-webm.ogv" type="video/ogg">
+  </video>
+
+  <!--Se o video pode ser exibido para qualquer pessoa, sem restrição, o mais indicado é o youtube mesmo, até porque é gratuito.-->
+  <h1>Inserido videos do youtube</h1>
+  <iframe width="650" height="400" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=WJPKRnZjrDrDpvhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+  <!--Obs, o Vimeo é pago, porém, se o cliente quiser postar video somente para certas pessoas verem, então ele deve optar por esse!-->
+  <h1>Inserindo video do Vimeo</h1>
+  <iframe src="https://player.vimeo.com/video/325639357?h=e4c0e9216f" width="650" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

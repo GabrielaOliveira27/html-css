@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fontes Externas</title>
+  <style>
+    /* Quando for adicionar fontes baixadas usar o seletor especial "fonte-face" */
+    @font-face {
+      font-family: 'Alista Script';
+      src: url('Alista Script.ttf') format('truetype'), url('Alista Script.otf') format('opentype');
+      /* Existem vários formatos de fontes
+      
+      Opentype (otf)
+      truetype (ttf)
+      svg
+      embedded-opentype
+      truetype-aat (apple advance typography*/
+    }
+
+    h1 {
+      font-family: 'Alista Script';
+      font-size: 3em;
+      font-weight: 100;
+    }
+  </style>
+</head>
+<body>
+  <h1>Olá mundo</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores id non vitae placeat tempora, libero atque vel eos sapiente fuga totam nemo officiis error expedita illo qui asperiores adipisci dolores?</p>
+  
+</body>
+</html>

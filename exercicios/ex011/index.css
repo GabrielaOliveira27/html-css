@@ -1,0 +1,16 @@
+h1{
+  text-align: center;
+  font-size: 90px;
+  color: #eb5fa2;
+}
+h2{
+  text-align: center;
+  font-size: medium;
+  color: #eb5fa2;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+}
+
+body {
+  background-attachment: fixed;
+}

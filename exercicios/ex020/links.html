@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links</title>
+  <style>
+    /* Id em CSS = #
+       Class em CSS = .
+       Pseudo-class em CSS = :
+       Pseudo-element em CSS = ::
+       > em CSS = Children/filho 
+    */
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(78, 255, 173);
+    }
+
+    ul {
+      list-style: none;
+    }
+    
+    .especial {
+      color: #fff12a;
+      
+    }
+
+    .especial:hover {
+      color: #0fac9a;
+    }
+
+    .especial::before {
+      content: '\002666';
+    }
+
+    .especial::after {
+      content: '\002666';
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: #9affec;
+    }
+
+    a:hover {
+      color: #c4c4c4;
+    }
+
+    a:active {
+      color: red;
+    }
+
+    .especial:active {
+      color: red;
+    }
+
+
+    
+    .segundo::after {
+      content: '\002665';
+    }
+
+    .segundo:hover {
+      color:#0fac9a;
+    }
+
+    h1:hover {
+      color:#0fac9a;
+    }
+  </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+      <li><a href="https://www.youtube.com/" target="_blank" rel="esternal" class="especial">Youtube</a></li>
+      <li><a href="https://www.episodeinteractive.com/" target="_blank" rel="esternal"  class="especial">Episode</a></li>
+      <li><a href="https://www.cursoemvideo.com/" class="segundo" target="_blank" rel="esternal">CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

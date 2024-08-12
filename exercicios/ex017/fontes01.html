@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fontes em CSS</title>
+  <style>
+    /* se por acaso não funcionar uma fonte, a outra automáticamente irá funcionar, e assim por diante... */
+    /* o peso das letras é weight -> width largura -> height altura.... */
+   
+    main {
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.685);
+      margin: auto 100px;
+      box-shadow: 2px 3px 8px #9e6972;
+      border-radius: 10px;
+      
+    }
+    body {
+      /* usando degradê */
+      background-image: linear-gradient(-40deg, #f1bdf4, #9e6972, white);
+      background-attachment: fixed;
+      
+      
+    }
+    h1, h2 {
+          text-decoration: underline;
+          text-align: center;
+          
+      /* shorthand ele condensa tudo em uma linha só, facilitando o trabalho de escrever cada codigo. */
+     
+      /* precisa seguir essa ordem-> font-style -> font-weight -> font-size -> font-family */
+      font: italic bolder 2.5em 'work sans',Arial, Helvetica, sans-serif;
+
+    }
+    
+    p {
+      /* exemplo usando shorthand */
+      font: 0.9em 'work sans',Arial, Helvetica, sans-serif;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  
+  
+    <main>
+      <h1>Trabalhando com fontes</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempore labore laudantium rerum ab corporis quod molestiae omnis illo perspiciatis culpa minima velit dolore quis, nostrum perferendis facere earum mollitia!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatum voluptates molestiae libero saepe reiciendis ullam fuga perspiciatis deserunt. Et necessitatibus odit porro maiores atque nostrum! Aspernatur fuga quo laborum quia praesentium illum nisi voluptate obcaecati quibusdam pariatur commodi voluptas eum ipsa modi nemo alias consequuntur nostrum atque, sequi, iste quaerat reiciendis corrupti. Numquam accusantium architecto beatae minus? Velit ducimus alias quidem eum ad saepe dolore itaque. Unde maiores, voluptatibus aspernatur reiciendis suscipit perferendis ad architecto velit placeat amet, dolore eveniet veniam dignissimos animi id labore eum veritatis distinctio. <br> Numquam pariatur repudiandae veniam quos, deserunt sequi quia sed atque dicta rerum quod voluptatibus. Autem magni dolor voluptates quidem magnam nisi reiciendis, quas necessitatibus nulla culpa optio facilis nam maxime blanditiis asperiores, quia laudantium repellat ipsa? Consequatur, reiciendis qui quasi officiis sapiente hic et nihil aut reprehenderit sed! Deserunt vitae saepe debitis laborum accusantium voluptas laboriosam libero iusto tempora sapiente! Eum perferendis autem ex, deserunt odit alias doloribus dolores. Tenetur, ad. Facilis, possimus. Ad unde corrupti enim commodi debitis, sint quam. Omnis officia voluptate minus nihil illo explicabo iste odit cupiditate itaque aliquid dolores quos, iusto possimus quibusdam recusandae mollitia ipsa impedit incidunt distinctio fugit facilis. Ad illum mollitia ipsum totam!</p>
+      <h2>Subtítulo</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel illum autem suscipit quia numquam sed veritatis fuga soluta debitis reiciendis, itaque error possimus, sint officiis, tenetur aspernatur illo non? Doloremque, iusto velit quae distinctio labore magnam dolore mollitia, itaque maiores aspernatur impedit sit, provident quod voluptates? Officia obcaecati impedit maiores corporis delectus inventore cum praesentium sapiente, illo exercitationem quos aut rerum deserunt mollitia magnam excepturi, distinctio earum quo laboriosam consequatur ullam odio amet. Placeat, animi velit repellendus, consectetur maxime quo atque, doloremque distinctio dignissimos consequuntur repellat fugiat! Officiis non maiores cupiditate molestias voluptas repudiandae cumque, asperiores, laudantium magni distinctio maxime.</p>
+    </main>
+  
+</body>
+</html>
