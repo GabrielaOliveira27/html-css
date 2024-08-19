@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela</title>
+
+  <style>
+   html, body {
+      width: 100%;
+      background-color: darkolivegreen;
+      
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+    }
+     
+    table {
+        width: 500px;
+        height: 200px;
+        border-collapse: collapse;
+        color: black;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        
+      }
+
+      tr {
+        border: 2px solid black;
+      }
+      
+      td {
+        border: 2px solid black;
+      }
+      .linha {
+        background-color: white;
+        padding: 5px;
+      }
+
+      .dado {
+        background-color: gray;
+        padding: 5px;
+      }
+  </style>
+</head>
+<body>
+     <h1>Minha <br>Primeira Tabela</h1>
+
+     <!-- Hierarquia de Tabela
+      table row
+        table header
+           table data -->
+      
+      <table>
+        <tr>
+          <td class="dado">A1</td>
+          <td class="dado">B1</td>
+          <td class="dado">C1</td>
+        </tr>
+
+        <tr class="linha">
+          <td class="linha">A2</td>
+          <td class="linha">B2</td>
+          <td class="linha">C2</td>
+        </tr>
+
+        <tr>
+          <td class="dado">A3</td>
+          <td class="dado">B3</td>
+          <td class="dado">C3</td>
+        </tr>
+        
+        <tr>
+          <td class="linha">A4</td>
+          <td class="linha">B4</td>
+          <td class="linha">C4</td>
+        </tr>
+      </table>
+</body>
+</html>
