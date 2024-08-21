@@ -8,6 +8,7 @@
   <style>
         body {
           font-family: Verdana, Geneva, Tahoma, sans-serif;
+
         }
 
         table {
@@ -15,12 +16,14 @@
            width: 500px;
            height: 300px;
            box-shadow: 0px 1px 3px #00000038;
+           margin: auto;
            
         }
 
         thead, tfoot {
           background-color: gray;
           color: white;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.356);
         }
 
         tr, td {
@@ -36,16 +39,35 @@
         .position {
           background-color: darkslateblue;
           color: white;
+          width: 10px;
         }
+
+        caption {
+          background-color: blanchedalmond;
+          padding: 10px;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.356);
+          font-size: 2.5em;
+        }
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+   
   </style>
 </head>
 <body>
      <table>
+          <caption>
+            População e Região
+          </caption>
           <thead>
                <tr>
-                  <td>Posição</td>
-                  <td>Unidade Federativa</td>
-                  <td>População</td>
+                  <th  style="padding: 20px;" scope="col">Posição</th>
+                  <th scope="col">Unidade Federativa</th>
+                  <th scope="col" style="width: 100px;">População</th>
                </tr>
           </thead>
               
@@ -185,6 +207,12 @@
                     <td>Roraima</td>
                     <td class="num">636 707	</td>
                   </tr>
+
+                  <tfoot>
+                    <th scope="row">População</th>
+                    <td>22.334.657</td>
+                    <td>--</td>
+                  </tfoot>
           </tbody>
      </table>
 </body>
