@@ -32,27 +32,41 @@
            text-align: center;
         }
 
+        th {
+          padding: 15px;
+        }
+
         .num {
            text-align: right;
         }
 
         .position {
-          background-color: darkslateblue;
+          background-color: #332a;
           color: white;
-          width: 10px;
+          width: 2px;
         }
 
         caption {
-          background-color: blanchedalmond;
+          background-color: #D3D3D3;
           padding: 10px;
           text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.356);
           font-size: 2.5em;
+          color: white;
         }
 
         * {
           margin: 0;
           padding: 0;
           box-sizing: border-box;
+        }
+          /* Efeito zebrado */
+        tbody > tr:nth-child(odd) { 
+          background-color: lightgrey;
+        }
+
+        tbody > tr:nth-child(even) {
+          background-color: #9654;
+        
         }
 
    
@@ -65,7 +79,7 @@
           </caption>
           <thead>
                <tr>
-                  <th  style="padding: 20px;" scope="col">Posição</th>
+                  <th  style="padding: 10px;" scope="col">Posição</th>
                   <th scope="col">Unidade Federativa</th>
                   <th scope="col" style="width: 100px;">População</th>
                </tr>
