@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      table {
+        width: 500px;
+        border-collapse: collapse;
+      }
+
+      td, th {
+        border: 1px solid black;
+        text-align: center;
+        padding: 10px;
+
+      }
+
+      caption {
+        background-color: #222854;
+        padding: 10px;
+        color: white;
+        font-weight: bolder;
+        font-size: 2em;
+      }
+
+      .nome {
+        background-color: #810;
+      }
+
+      .cidade {
+        background-color: #739582;
+      }
+
+      .sexo {
+        background-color: #2215;
+      }
+
+      td:hover {
+        background-color: #295742;
+      }
+  </style>
+</head>
+<body>
+    <table>
+
+      <colgroup>
+          <col class="nome">
+          <col class="sexo">
+          <col class="cidade" span="2">
+
+      </colgroup>
+      <caption>Cadastro</caption>
+        <tr>
+          <th>Nome</th>
+          <th>Sexo</th>
+          <th>Cidade</th>
+          <th>Profissão</th>
+        </tr>
+
+        <tr>
+          <td>Maria dos Santos</td>
+          <td>F</td>
+          <td>São Paulo</td>
+          <td>Nutricionista</td>
+        </tr>
+
+        <tr>
+          <td>Camila Souza</td>
+          <td>F</td>
+          <td>Rio de Janeiro</td>
+          <td>Veterinária</td>
+        </tr>
+
+        <tr>
+          <td>Paula Sanchez</td>
+          <td>F</td>
+          <td>Bahía</td>
+          <td>Enfermeira</td>
+        </tr>
+
+        <tr>
+          <td>Patrícia Lima</td>
+          <td>F</td>
+          <td>Minas Gerais</td>
+          <td>Psicóloga</td>
+        </tr>
+    </table>
+</body>
+</html>
