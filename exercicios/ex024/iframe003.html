@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uso de Frames</title>
+
+  <style>
+
+       * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+       }
+       body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: lightblue;
+        color: black;
+
+       }
+
+       h1 {
+        color: #4f8c98;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-variant: small-caps;
+        font-size: 3em;
+        text-shadow: 1px 1px 2px #00000036;
+       }
+
+       p {
+        width: 50vw;
+        margin: auto;
+        margin-bottom: 20px;
+        line-height: 2em;
+       }
+
+       #tela {
+
+           width: 95vw;
+           height: 50vh;
+           border: 2px solid white;
+           display: block;
+           margin: auto;
+           margin-bottom: 100px;
+       }
+
+      
+       ul {
+        list-style: none;
+        text-align: center;
+        margin: 20px;
+        
+       }
+
+       ul a {
+        color: blue;
+        text-decoration: none;
+        font-family: monospace;
+       }
+
+       ul a:hover {
+         background-color: darkblue;
+         color: white;
+         padding: 5px;
+       }
+  </style>
+</head>
+<body>
+
+    <h1>Faça uma Escolha</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda ipsa vero alias! Aliquam in vero voluptatibus pariatur tempora labore, perspiciatis dolor vitae commodi neque. Possimus impedit officia cupiditate iusto quibusdam!</p>
+
+    <ul>
+      <li><a href="../ex023/tabelaresponsiva.html" target="frame">Primeira página</a></li>
+      <li><a href="pag002.html" target="frame">Segunda página</a></li>
+      <li><a href="pag003.html" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi debitis nostrum vero fugit sapiente. Illo hic, facere temporibus iure optio veritatis rem amet adipisci accusamus cum enim, molestias sed laboriosam.</p>
+
+    <iframe id="tela" name="frame" srcdoc="<p>Faça sua escolha...</p> <img src='imagens/maca.png'>"></iframe>
+  
+</body>
+</html>
