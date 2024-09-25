@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+
+  <style>
+     fieldset{
+      background-color: beige;
+      width: 400px;
+      color: darkgreen;
+      text-shadow: 1px 1px 2px #00000045;
+     }
+
+     .sr {
+      color: darkslategrey;
+      background-color: rgb(160, 186, 160);
+      border: 1px solid lightslategray;
+      padding: 5px;
+     }
+
+     .sr:hover {
+      background-color: rgb(108, 145, 108);
+      color: white;
+     }
+
+     .campos {
+      border: 1px solid white;
+      color:  rgb(109, 182, 0);
+
+     }
+
+    legend {
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+    <h1>Teste com Formulários</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+
+          <legend>Dados Pessoais</legend>
+          <p>
+            <label for="inome">Nome:</label>
+            <input class="campos" type="text" name="nome" id="inome" required minlength="5" maxlength="20" placeholder="nome" autocomplete="name">
+          </p>
+          <p>
+            <label for="iemail">Email:</label>
+            <input class="campos" type="email" name="email" id="iemail" required autocomplete="email" placeholder="email">
+          </p>
+          <p>
+            <label for="itel">Telefone:</label>
+            <input class="campos" type="tel" name="tel" id="itel" placeholder="(xx)xxx-xxx" pattern="^\(\d{2}\){4,5}-\d{4,5}$" required>
+          </p>
+        </fieldset>
+
+        <p>
+          <input class="sr" type="submit" value="Enviar">
+          <input class="sr" type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
